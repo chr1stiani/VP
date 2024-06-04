@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+*/
+:root {
+  --color-dark: #151515;
+  --color-primary: #A91D3A;
+  --color-secondary: #C73659;
+  --color-light: #EEEEEE;
+  --color-light-transparent: rgba(232, 232, 232, 0.274);
+  --color-green: #4CAF50; /* Good green color */
+  --color-blue-light: #ADD8E6; /* Light blue */
+  --color-blue-medium: #0000CD; /* Medium blue */
+  --color-blue-dark: #00008B; /* Dark blue */
+}
+
+
+/* <--------------------- Dancing Script ---------------------> */
+
+.dancing-script-400 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-500 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dancing-script-600 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dancing-script-700 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* <--------------------- Montserrat ---------------------> */
+
+.montserrat-100 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.montserrat-200 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-300 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-500 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-600 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-800 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-900 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* font styles */
+
+.bold {
+    font-weight: 700;
+}
+
+/* header */
+.headlineContainer {
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.quote {
+    font-size: 1rem;
+}
+
+/* styling stats */
+.containerPlus {
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid var(--color-light);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px var(--color-light);
+    backdrop-filter: blur(10px);
+}
+.section {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    color: white;
+}
+.section2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  border-left: 2px solid var(--color-light-transparent);
+  color: white;
+}
+.section-25 {
+    flex: 0 0 25%;
+}
+.section-50 {
+    flex: 0 0 50%;
+}
+
+/* styling games container */
+.gamesContainer {
+    flex-direction: row;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.diceContainer,
+.guessContainer {
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.dice,
+.guess {
+    backdrop-filter: blur(10px); 
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid var(--color-secondary);
+    /*box-shadow: 0 0 15px 2px var(--color-blue-dark);*/
+}
+.diceNumberContainer,
+.guessNumberContainer {
+  color: white;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.diceButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.breakLine {
+  width: calc(100% - 60px);
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.diceButton {
+  background-color: white;
+  height: auto;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  border-radius: 100px;
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.diceButton:hover,
+.guessButton:hover {
+  background-color: var(--color-light);
+  color: black;
+}
+
+.diceButton:active,
+.guessButton:active {
+  scale: 0.95;
+}
+.guessButton {
+  background-color: white;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: 15px;
+  padding: 2.5px;
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.guessNumberInfo,
+.diceInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  color: white;
+}
+.guessNumberInputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes rollDice {
+  0% { transform: rotate(0deg); opacity: 1; }
+  50% { transform: rotate(360deg); opacity: 0.5; }
+  100% { transform: rotate(720deg); opacity: 1; }
+}
+
+.diceNumberText.animate,
+.guessNumberText.animate {
+  animation: rollDice 1s ease-in-out;
+}
+
+#particles-js {
+  background-color: var(--color-dark);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* additional styling */
+
+.quoteContainer {
+  color: var(--color-light);
+  height: auto !important;
+  background-color: var(--color-light-transparent);
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  /*box-shadow: 0 0 20px 5px var(--color-light);*/
+  border: 3px solid var(--color-light);
+}
+
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.imageAssets {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.marginer {
+  margin-right: 10px !important;
+}
+
+.biggerText {
+  font-size: 1.5rem;
+}
+
+.guessHeadline,
+.diceHeadline {
+  color: var(--color-light);
+}
+
+.buttonText {
+  font-size: 1rem;
+}
+
+.guessNumberInput {
+  border: 2px solid var(--color-light);
+  border-radius: 10px;
+  padding: 10px;
+}
+
